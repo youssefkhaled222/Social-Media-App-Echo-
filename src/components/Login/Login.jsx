@@ -5,7 +5,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthContext';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async'
 
 const schema = zod.object({
   email: zod.email().regex(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/, "email is invalid").nonempty("email is required"),

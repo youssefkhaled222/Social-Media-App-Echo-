@@ -4,7 +4,7 @@ import * as zod from "zod";
 import { zodResolver } from '@hookform/resolvers/zod';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async'
 
 const schema = zod.object({
   name: zod.string().min(3, "minimum length is 3 chars").max(15, "maximum length is 15 chars").nonempty("name is required"),

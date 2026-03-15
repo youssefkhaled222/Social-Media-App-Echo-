@@ -4,7 +4,7 @@ import PostCard from '../PostCard/PostCard'
 import Loader from '../Loader/Loader';
 import { useQuery } from '@tanstack/react-query';
 import PostCreation from '../PostCreation/PostCreation';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async'
 
 export default function Home() {
   function getAllPosts() {

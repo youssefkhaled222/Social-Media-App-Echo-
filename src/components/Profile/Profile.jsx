@@ -1,5 +1,5 @@
 import React, { useContext, useRef, useState } from 'react'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 import axios from 'axios'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import Loader from '../Loader/Loader'
