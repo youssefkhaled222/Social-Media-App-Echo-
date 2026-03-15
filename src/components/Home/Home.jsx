@@ -4,7 +4,7 @@ import PostCard from '../PostCard/PostCard'
 import Loader from '../Loader/Loader';
 import { useQuery } from '@tanstack/react-query';
 import PostCreation from '../PostCreation/PostCreation';
-import { Helmet } from 'react-helmet-async'
+import { HelmetProvider } from 'react-helmet-async'
 
 export default function Home() {
   function getAllPosts() {
@@ -35,9 +35,9 @@ export default function Home() {
 
   return (
     <>
-      <Helmet>
+      <HelmetProvider>
         <title>Home</title>
-      </Helmet>
+      </HelmetProvider>
 
       <section className="space-y-6">
         <div className="mx-auto max-w-2xl">

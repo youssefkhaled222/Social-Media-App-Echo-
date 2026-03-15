@@ -4,7 +4,7 @@ import * as zod from "zod";
 import { zodResolver } from '@hookform/resolvers/zod';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async'
+import { HelmetProvider } from 'react-helmet-async'
 
 const schema = zod.object({
   name: zod.string().min(3, "minimum length is 3 chars").max(15, "maximum length is 15 chars").nonempty("name is required"),
@@ -69,9 +69,9 @@ export default function Register() {
 
   return (
     <>
-      <Helmet>
+      <HelmetProvider>
         <title>Register</title>
-      </Helmet>
+      </HelmetProvider>
 
       <section className="flex min-h-[80vh] items-center justify-center">
         <div className="w-full max-w-2xl rounded-[2rem] bg-white/80 p-8 shadow-2xl ring-1 ring-slate-200 backdrop-blur-sm md:p-10">

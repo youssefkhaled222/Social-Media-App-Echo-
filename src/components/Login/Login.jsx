@@ -5,7 +5,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthContext';
-import { Helmet } from 'react-helmet-async'
+import { HelmetProvider } from 'react-helmet-async'
 
 const schema = zod.object({
   email: zod.email().regex(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/, "email is invalid").nonempty("email is required"),
@@ -48,9 +48,9 @@ export default function Login() {
 
   return (
     <>
-      <Helmet>
+      <HelmetProvider>
         <title>Login</title>
-      </Helmet>
+      </HelmetProvider>
 
       <section className="flex min-h-[80vh] items-center justify-center">
         <div className="w-full max-w-xl rounded-[2rem] bg-white/80 p-8 shadow-2xl ring-1 ring-slate-200 backdrop-blur-sm md:p-10">

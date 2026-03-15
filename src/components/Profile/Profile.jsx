@@ -1,5 +1,5 @@
 import React, { useContext, useRef, useState } from 'react'
-import { Helmet } from 'react-helmet-async'
+import { HelmetProvider } from 'react-helmet-async'
 import axios from 'axios'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import Loader from '../Loader/Loader'
@@ -170,9 +170,9 @@ export default function Profile() {
 
   return (
     <>
-      <Helmet>
+      <HelmetProvider>
         <title>Profile</title>
-      </Helmet>
+      </HelmetProvider>
 
       <section className="space-y-6">
         <div className="mx-auto max-w-2xl overflow-hidden rounded-[2rem] bg-white/80 shadow-2xl ring-1 ring-slate-200 backdrop-blur-sm">

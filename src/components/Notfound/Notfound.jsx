@@ -1,14 +1,14 @@
 import React from "react";
-import { Helmet } from 'react-helmet-async'
+import { HelmetProvider } from 'react-helmet-async'
 import { Link } from "react-router-dom";
 import { Button } from "@heroui/react";
 
 export default function Notfound() {
   return (
     <>
-      <Helmet>
+      <HelmetProvider>
         <title>Page Not Found</title>
-      </Helmet>
+      </HelmetProvider>
 
       <div className="flex min-h-[70vh] flex-col items-center justify-center rounded-[2rem] bg-white/70 px-6 py-16 text-center shadow-xl ring-1 ring-slate-200 backdrop-blur-sm">
         <div className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-sky-500">
