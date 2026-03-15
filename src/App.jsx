@@ -10,7 +10,7 @@ import CounterContextProvider from './context/CounterContext'
 import {HeroUIProvider} from "@heroui/react";
 import AuthContextProvider from './context/AuthContext'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
-import AuthProtectedRoute from './components/ProtectedRoute/authProtectedRoute'
+import AuthProtectedRoute from './components/ProtectedRoute/AuthProtectedRoute'
 import {QueryClient , QueryClientProvider} from "@tanstack/react-query"
 import PostDetails from './components/PostDetails/PostDetails'
 import { ToastContainer } from 'react-toastify'
