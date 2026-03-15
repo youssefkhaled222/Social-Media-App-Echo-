@@ -1,16 +1,54 @@
-# React + Vite
+# Echo - Social Media App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Echo is a modern social media web application that allows users to connect, share posts, upload images, comment on posts, and manage their personal profiles.
 
-Currently, two official plugins are available:
+The project is built using React and modern frontend tools, focusing on clean UI, efficient state management, and responsive design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Users can register, log in, create posts with images, comment on posts, upload profile photos, change their password, and manage their own content.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- User authentication (Register / Login)
+- Create posts with text and images
+- Comment on posts
+- Delete and manage your own posts
+- Upload and update profile picture
+- Change account password
+- View personal posts in the profile page
+- Responsive UI with TailwindCSS
+- Offline detection
+- Notifications using React Toastify
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- React Router
+- React Query (TanStack Query)
+- TailwindCSS
+- HeroUI
+- Axios
+- React Hook Form
+- Zod Validation
+- JWT Authentication
+
+## Project Structure
+
+src/
+ ├── components/
+ │    ├── Navbar
+ │    ├── Footer
+ │    ├── PostCard
+ │    ├── Comment
+ │    ├── PostCreation
+ │    └── ...
+ │
+ ├── context/
+ │    ├── AuthContext
+ │    └── CounterContext
+ │
+ ├── App.jsx
+ └── main.jsx
+
+## Author
+
+Youssef Khaled
